@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{ACE1C004-D947-15D3-F006-DEBDF5FDB721}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/W22_COP2671_053/Scripts/TestScript.cs">
+    <Files>
+      <File FileName="Assets/W22_COP2671_053/Scripts/TestScript.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Option id="ShowAllFiles" value="True" />
+          <Node name="finalproject" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="W22_COP2671_053" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="TestScript.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3764682b-e594-46e9-9590-41d7ef20751a" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
