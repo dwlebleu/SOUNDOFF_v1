@@ -4,17 +4,23 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
+    private GameManager gameManager;
     private Rigidbody targetRb;
     private float minSpeed = 0.5f;
     private float maxSpeed = 1.5f;
-    private float maxTorque = 10;
+    private float maxTorque = 5;
     private float xRange = 10;      //range of the X pos of board
     private float ySpawnPos = 4;     //range of the Y pos of board
+
+    public ParticleSystem splash;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         targetRb = GetComponent<Rigidbody>();
+
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
         targetRb.AddForce(Vector3.up * Random.Range(minSpeed, maxSpeed), ForceMode.Impulse);
 
@@ -34,6 +40,10 @@ public class Target : MonoBehaviour
     private void OnMouseDown()
     {
         Destroy(gameObject);
+        //add particle effects
+        gameManager.UpdateScore(5);
+
+        Instantiate(splash, transform.position, splash.transform.rotation);
     }
 
     private void OnTriggerEnter(Collider other)

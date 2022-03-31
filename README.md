@@ -1,5 +1,5 @@
 # Project Design Document
-> first draft final
+> lab 6 Basic GamePlay
 
 ## SOUND OFF
 
@@ -35,8 +35,8 @@ while clicking the black balls that spawn playing disonance to prevent disinnanc
 | - | - | - |
 | #1 | <u>*- Basic game set up,background imagery, objects, enemies by March 9th*</u> | <u>*mm/dd*</u> |
 | #2 | <u>*- Player controls functionality, user interface, logic by March 16th *</u> | <u>*mm/dd*</u> |
-| #3 | <u>*- sound, music, particle effects, by March 23rd *</u> | <u>*mm/dd*</u> |
-| #4 | <u>*- Basic game play functionality, by March 30th *</u> | <u>*mm/dd*</u> |
+| #3 | <u>*- Basic game play functionality, by March 23th *</u> | <u>*mm/dd*</u> |
+| #4 | <u>*- sound, music, particle effects, by April 6 *</u> | <u>*mm/dd*</u> |
 | backlog | <u>*- Features on backlog - not part of the minimum viable product *</u> | <u>*mm/dd*</u> |
 
 ---
