@@ -13,7 +13,7 @@ public class Target : MonoBehaviour
     private float ySpawnPos = 4;     //range of the Y pos of board
 
     public ParticleSystem splash;
-    
+    public int pointValue;
 
     // Start is called before the first frame update
     void Start()
@@ -39,11 +39,16 @@ public class Target : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Destroy(gameObject);
-        //add particle effects
-        gameManager.UpdateScore(5);
+        //when game is over score code won't run
+        if(gameManager.isGameActive)
+        {
+            Destroy(gameObject);
+            //add particle effects
+            gameManager.UpdateScore(pointValue);
 
-        Instantiate(splash, transform.position, splash.transform.rotation);
+            Instantiate(splash, transform.position, splash.transform.rotation);
+        }
+        
     }
 
     private void OnTriggerEnter(Collider other)

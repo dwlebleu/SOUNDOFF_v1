@@ -256,6 +256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   splash: {fileID: 15085447402717889, guid: 743ce290c74ae49c19aa3f128322fc7e, type: 3}
+  pointValue: 5
 --- !u!114 &-4109793175364172555
 MonoBehaviour:
   m_ObjectHideFlags: 0

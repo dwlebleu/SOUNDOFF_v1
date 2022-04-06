@@ -1,5 +1,8 @@
 # Project Design Document
-> lab 6 Basic GamePlay
+> lab 7 Basic GamePlay
+> added Title, Info, and Game Over pages
+> added Start amd restart buttons and functionality
+
 
 ## SOUND OFF
 
@@ -10,8 +13,8 @@ music, sound, ambient, soundgame, musicgame
 
 **Object of the Game**
 
-> to create a musical song by clicking colored balls to generate tones and add points to score, player must click black balls that spawn playing disonant tones
-> to avoid those notes from ruining the song. Game plays for 1 minute counting down. Player can collect certain objects to produce chords. 
+> to create a musical song by clicking colored diamonds to generate tones and add points to score, player must click red diamonds that spawn playing disonant tones
+> to avoid those notes from ruining the song. Game plays until score of 100 is reached. Player can collect certain objects to produce chords. 
 
 **Game Controls**
 
@@ -21,12 +24,12 @@ music, sound, ambient, soundgame, musicgame
 **Project Concept**
 | Unit Procession | Idea / Concept |
 | - | - |
-| 1. Player Control | You control a mouse in this side view game where mouse clicks makes the player click randomly spawned balls to play their notes |
-| 2. Basic Gameplay | During the game, colored balls appear from random areas of the screen and the goal of the game is to click balls that spawn to create musical notes
-while clicking the black balls that spawn playing disonance to prevent disinnance from ruining the music. |
-| 3. Sound & Effects | There will be sound effects a bed of ambience in the background, balls when clicked produce a single note from a scale and particle effects of some kind to indicate a click. [optional] There will also be special balls that when clicked play chords |
-| 4. Gameplay Mechanics | As the game progresses, colored balls spawn, player clicks them to generate tones, making it sound like a piece of music is being made, while gathering points [optional] There will also be black balls that spawn automatically playing dissonance, player should click to stop |
-| 5. User Interface | The score will increase whenever balls are clicked . At the start of the game, the title SOUND OFF will appear and the game will end when 1 minute mark has lapsed |
+| 1. Player Control | You control a mouse in this side view game where mouse clicks makes the player click randomly spawned diamonds to play their notes |
+| 2. Basic Gameplay | During the game, blue, green and red diamonds appear from random areas of the screen and the goal of the game is to click diamonds that spawn to create musical notes
+while clicking the red diamonds that spawn playing disonance to prevent disinnance from ruining the music. |
+| 3. Sound & Effects | There will be sound effects a bed of ambience in the background, blue diamonds when clicked produce a single note from a scale and particle effects of some kind to indicate a click. [optional] There will also be green diamonds that when clicked play chords |
+| 4. Gameplay Mechanics | As the game progresses, colored diamonds spawn, player clicks them to generate tones, making it sound like a piece of music is being made, while gathering points [optional] There will also be red diamonds that spawn automatically playing dissonance, player should click to stop |
+| 5. User Interface | The score will increase whenever diamonds are clicked . At the start of the game, the title SOUND OFF will appear and the game will end when 100 points or more is met|
 | 6. Other Features | <u>*Any other notes about the project that you don't feel were addresses in the above.*</u>
 ---
 
