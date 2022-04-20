@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 5693990759992828307}
   - component: {fileID: 5871772348166871471}
   - component: {fileID: -8974709422568417499}
+  - component: {fileID: -9089802026713118928}
   m_Layer: 0
   m_Name: Chords
   m_TagString: Untagged
@@ -114,9 +115,9 @@ AudioSource:
   m_GameObject: {fileID: 5692871859197116253}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -909530875044785829, guid: 8b6b2635f049e493e8ae166305420308, type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -269,3 +270,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8aa9b50b7ef5b4006abc2829df1e9e86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-9089802026713118928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5692871859197116253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 849bf7b9fb2364f6bb0504b9edbd734c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gemType: 2
+  audioSource: {fileID: 5630476003469811807}
+  soundFiles:
+  - {fileID: 8300000, guid: 3545243683298493c8b29808dfd0c6c4, type: 3}
+  - {fileID: 8300000, guid: 1984b03aa77384f7d920dcf8e28389d0, type: 3}
+  - {fileID: 8300000, guid: 8c0c3e7ded65e461093e6b04cf1640e7, type: 3}
+  - {fileID: 8300000, guid: 756bb0db1338446328c56cf078c69bc3, type: 3}
+  - {fileID: 8300000, guid: 31989f7c3face43fbad2c31866f6a6a6, type: 3}
+  - {fileID: 8300000, guid: 1ab3779dd79054b50950daeca1b584ab, type: 3}

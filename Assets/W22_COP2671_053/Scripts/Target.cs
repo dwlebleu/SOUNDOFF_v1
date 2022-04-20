@@ -11,8 +11,7 @@ public class Target : MonoBehaviour
     private float maxTorque = 5;
     private float xRange = 10;      //range of the X pos of board
     private float ySpawnPos = 4;     //range of the Y pos of board
-
-    public ParticleSystem splash;
+    public ParticleSystem splash;   //for the splash effect
     public int pointValue;
 
     // Start is called before the first frame update
@@ -29,24 +28,43 @@ public class Target : MonoBehaviour
 
         //get position of current object
         transform.position = new Vector3(Random.Range(-xRange, xRange), Random.Range(-ySpawnPos, ySpawnPos)); //no Z
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnMouseDown()
     {
         //when game is over score code won't run
         if(gameManager.isGameActive)
         {
-            Destroy(gameObject);
-            //add particle effects
+            //local var for gemsound
+            var gemSound = GetComponent<AudioGems>();
+
+            //if gem is not a bad gem...
+            if (gemSound.gemType != AudioGems.gems.bad)
+            {
+                //play the good sounds
+                gemSound.audioSource.Play();
+                //destroy only after sound has finished playing
+                Destroy(gameObject, gemSound.audioSource.clip.length);
+                //add particle effects
+                Instantiate(splash, transform.position, splash.transform.rotation);
+            }
+            else
+            {
+                //stop bad gem sound when clicked. 
+                gemSound.audioSource.Stop();
+                Destroy(gameObject);
+                //add particle effects
+                Instantiate(splash, transform.position, splash.transform.rotation);
+            }
+
+            
+            //update the score for each clicked gem
             gameManager.UpdateScore(pointValue);
 
-            Instantiate(splash, transform.position, splash.transform.rotation);
+            //add particle effects
+            //Instantiate(splash, transform.position, splash.transform.rotation);          
         }
         
     }

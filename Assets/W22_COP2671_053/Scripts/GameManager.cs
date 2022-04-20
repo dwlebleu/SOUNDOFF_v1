@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI titleText;
     public TextMeshProUGUI infoText;
 
-    //spawn a new target every second
+    //spawn a new target every 2 seconds
     private float spawnRate = 1.5f;
 
     //variable to store score
@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //check to update score constantly
         UpdateScore(0);
 
     }
@@ -71,11 +72,13 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        
+        //if game is over show restart button
         restartButton.gameObject.SetActive(true);
+
         //set the Game Over text to appear
         gameOverText.gameObject.SetActive(true);
         isGameActive = false;
+        
     }
 
     public void RestartGame()
@@ -94,6 +97,7 @@ public class GameManager : MonoBehaviour
         //call the Spawn Target method with a CoRoutine
         StartCoroutine(SpawnTarget());
 
+        //enable score, and disable start button, title,info screens
         scoreText.gameObject.SetActive(true);
         titleText.gameObject.SetActive(false);
         infoText.gameObject.SetActive(false);

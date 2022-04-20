@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 7360579668089023388}
   - component: {fileID: 2968263237737576373}
   - component: {fileID: -182943768017415520}
+  - component: {fileID: 4547753804189633954}
   m_Layer: 0
   m_Name: BadNotes
   m_TagString: Untagged
@@ -114,9 +115,9 @@ AudioSource:
   m_GameObject: {fileID: 7359007319153040632}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -9134515423477425351, guid: 8b6b2635f049e493e8ae166305420308, type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -269,3 +270,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8aa9b50b7ef5b4006abc2829df1e9e86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4547753804189633954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7359007319153040632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 849bf7b9fb2364f6bb0504b9edbd734c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gemType: 1
+  audioSource: {fileID: 7422068350825545354}
+  soundFiles:
+  - {fileID: 8300000, guid: c4de1bf4484634fa897d09df7c0bf846, type: 3}
+  - {fileID: 8300000, guid: 8e40e61d6bc154746825f5d7bd156468, type: 3}
+  - {fileID: 8300000, guid: 7c829bcd2ed8247b5b1ff64f2697674e, type: 3}

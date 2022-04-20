@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 4887300462117382329}
   - component: {fileID: 8199391233269481608}
   - component: {fileID: -4109793175364172555}
+  - component: {fileID: -6988712834830879349}
   m_Layer: 0
   m_Name: GoodNotes
   m_TagString: Untagged
@@ -114,9 +115,9 @@ AudioSource:
   m_GameObject: {fileID: 4887853358607553673}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 2311472242985184246, guid: 8b6b2635f049e493e8ae166305420308, type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -269,3 +270,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8aa9b50b7ef5b4006abc2829df1e9e86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-6988712834830879349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4887853358607553673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 849bf7b9fb2364f6bb0504b9edbd734c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gemType: 0
+  audioSource: {fileID: 4824916695456482033}
+  soundFiles:
+  - {fileID: 8300000, guid: 6751b4e36c8354c17b4f06a520c6cc44, type: 3}
+  - {fileID: 8300000, guid: ca8f539de98bf4bf0b4492e1f7e3439c, type: 3}
+  - {fileID: 8300000, guid: fa40d8117c8df40758154df4a1e4a254, type: 3}
+  - {fileID: 8300000, guid: b3782510783844a6aa33504c7f6f7483, type: 3}
+  - {fileID: 8300000, guid: 49a53c7d06c754ed89633ee23f407743, type: 3}
+  - {fileID: 8300000, guid: 0df3adc9714a44b729cadd288ee51351, type: 3}
+  - {fileID: 8300000, guid: ccc3849fb288d498fa6baddfbe4d531a, type: 3}
+  - {fileID: 8300000, guid: 0a2cd1255a39048bc91e54a6378f4a12, type: 3}
+  - {fileID: 8300000, guid: 396aba854f60e48eea647f93d7fabf53, type: 3}
+  - {fileID: 8300000, guid: 942a8942197964549996e3e3d2e2849a, type: 3}
+  - {fileID: 8300000, guid: f43794c4e1cb04c98a27e5392eee6d82, type: 3}

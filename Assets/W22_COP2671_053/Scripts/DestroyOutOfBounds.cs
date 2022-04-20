@@ -10,12 +10,7 @@ public class DestroyOutOfBounds : MonoBehaviour
     private float leftSide = -13;
     private float rightSide = 13;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+  
     // Update is called once per frame
     void Update()
     {
